@@ -5,7 +5,7 @@
     display: block;
    max-width:90%;
     height: 35vw;
-    background-image: url(img/background2.png);
+    background-image: url(background2.png);
     animation: movebg 30s linear infinite;
     animation-play-state: paused;
     margin:auto;
@@ -19,19 +19,8 @@
 }
 @keyframes movebg {to{background-position: -1200px;}}
 
-.pet {
-    background-image: url(img/pet.png);
-    background-size: contain ;
-    height: 91px;
-    width: 93px;
-    margin:auto;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 46px);
-}
 .petwalk {
-    background-image: url(img/petwalk.png);
+    background-image: url(petwalk.png);
     height: 91px;
     width: 93px;
     margin:auto;
@@ -40,17 +29,17 @@
     bottom: 0;
     left: 0;
     right: 0;
-    animation: movepet 1s steps(28) infinite;
+    animation: petwalk 1s steps(28) infinite;
 }
 
-@keyframes movepet {
+@keyframes petwalk {
     to{
          background-position: -2568px;
     }
 }
 
 .petjump {
-    background-image: url(img/petjump.png);
+    background-image: url(petjump.png);
     height: 91px;
     width: 92px;
     margin:auto;
@@ -59,9 +48,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    animation: jumppet 1s steps(23) infinite;
+    animation: petjump 1s steps(23) infinite;
 }
-@keyframes jumppet {
+@keyframes petjump {
     to{
          background-position: -2296px;
     }
